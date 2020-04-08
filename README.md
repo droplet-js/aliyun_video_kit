@@ -8,6 +8,34 @@ A new flutter plugin project.
 * [Android SDK](https://help.aliyun.com/document_detail/94451.html?spm=a2c4g.11186623.6.1104.67fb5acagm2z3Q)
 * [iOS SDK](https://help.aliyun.com/document_detail/92854.html?spm=a2c4g.11186623.6.1113.2bed7605qy9xtk)
 
+## Android
+
+* android/app/build.gradle
+
+```groovy
+apply from: "${rootProject.findProject(":aliyun_video_kit").projectDir}/aliyun_video_kit.gradle"
+```
+
+## iOS
+
+## Flutter
+
+* snapshot
+
+```yaml
+dependencies:
+  aliyun_video_kit:
+    git:
+      url: https://github.com/v7lin/aliyun_video_kit.git
+```
+
+* release
+
+```yaml
+dependencies:
+  aliyun_video_kit: ^${latestTag}
+```
+
 ## Getting Started
 
 This project is a starting point for a Flutter
