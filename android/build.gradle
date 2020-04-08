@@ -1,5 +1,5 @@
 group 'io.github.v7lin.aliyun_video_kit'
-version '1.0'
+version '0.0.1'
 
 buildscript {
     repositories {
@@ -16,19 +16,47 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+
+        // aliyun
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
     }
 }
 
 apply plugin: 'com.android.library'
+apply from: './quality.gradle'
 
 android {
     compileSdkVersion 28
 
+    resourcePrefix 'aliyun_video_kit'
+
     defaultConfig {
         minSdkVersion 16
+
+        consumerProguardFiles 'consumer-rules.pro'
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     lintOptions {
         disable 'InvalidPackage'
     }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.aliyun.video.android:svideosnap:3.15.0'//短视频基础版SDK必须依赖
+    implementation 'com.aliyun.video.android:core:1.2.2' //核心库必须依赖
+    implementation  'com.alivc.conan:AlivcConan:1.0.3'//核心库必须依赖
+    implementation  'com.aliyun.video.android:AlivcFFmpeg:2.0.0'//必须依赖
+    implementation  'com.aliyun.video.android:upload:1.6.0'// 上传库,如不需要上传可不依赖
 }
