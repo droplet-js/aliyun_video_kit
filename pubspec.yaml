@@ -1,8 +1,8 @@
 name: aliyun_video_kit
-description: A new flutter plugin project.
+description: A powerful flutter plugin with Aliyun Video SDK.
 version: 0.0.1
-author:
-homepage:
+# author: v7lin <v7lin@qq.com>
+homepage: https://github.com/v7lin/aliyun_video_kit
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -11,9 +11,16 @@ dependencies:
   flutter:
     sdk: flutter
 
+  json_annotation: '>=2.0.0 <4.0.0'
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  pedantic:
+
+  build_runner:
+  json_serializable:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
