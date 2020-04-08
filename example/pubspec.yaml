@@ -1,5 +1,6 @@
 name: aliyun_video_kit_example
 description: Demonstrates how to use the aliyun_video_kit plugin.
+version: 0.0.1+1
 publish_to: 'none'
 
 environment:

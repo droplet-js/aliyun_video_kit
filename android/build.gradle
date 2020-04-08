@@ -54,9 +54,10 @@ android {
 }
 
 dependencies {
-    implementation 'com.aliyun.video.android:svideosnap:3.15.0'//短视频基础版SDK必须依赖
-    implementation 'com.aliyun.video.android:core:1.2.2' //核心库必须依赖
-    implementation  'com.alivc.conan:AlivcConan:1.0.3'//核心库必须依赖
-    implementation  'com.aliyun.video.android:AlivcFFmpeg:2.0.0'//必须依赖
+    // 短视频基础版
+    implementation 'com.aliyun.video.android:svideosnap:3.15.0'// 短视频基础版SDK必须依赖
+    implementation 'com.aliyun.video.android:core:1.2.2' // 核心库必须依赖
+    implementation  'com.alivc.conan:AlivcConan:1.0.3'// 核心库必须依赖
+    implementation  'com.aliyun.video.android:AlivcFFmpeg:2.0.0'// 必须依赖
     implementation  'com.aliyun.video.android:upload:1.6.0'// 上传库,如不需要上传可不依赖
 }
