@@ -1,6 +1,12 @@
 # aliyun_video_kit
 
-A new flutter plugin project.
+[![Build Status](https://cloud.drone.io/api/badges/v7lin/aliyun_video_kit/status.svg)](https://cloud.drone.io/v7lin/aliyun_video_kit)
+[![Codecov](https://codecov.io/gh/v7lin/aliyun_video_kit/branch/master/graph/badge.svg)](https://codecov.io/gh/v7lin/aliyun_video_kit)
+[![GitHub Tag](https://img.shields.io/github/tag/v7lin/aliyun_video_kit.svg)](https://github.com/v7lin/aliyun_video_kit/releases)
+[![Pub Package](https://img.shields.io/pub/v/aliyun_video_kit.svg)](https://pub.dartlang.org/packages/aliyun_video_kit)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/v7lin/aliyun_video_kit/blob/master/LICENSE)
+
+A powerful flutter plugin with Aliyun Video SDK.
 
 ## docs
 

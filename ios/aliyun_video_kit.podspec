@@ -5,9 +5,9 @@
 Pod::Spec.new do |s|
   s.name             = 'aliyun_video_kit'
   s.version          = '0.0.1'
-  s.summary          = 'A new flutter plugin project.'
+  s.summary          = 'A powerful flutter plugin with Aliyun Video SDK.'
   s.description      = <<-DESC
-A new flutter plugin project.
+A powerful flutter plugin with Aliyun Video SDK.
                        DESC
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
